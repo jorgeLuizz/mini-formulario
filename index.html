@@ -20,8 +20,9 @@
             <form class="form">
                 <div class="form__group">
                     <label class="form__label hide" for="inputName">Nome</label>
-                    <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Nome" />
+                    <input type="text" name="name" class="form__input-text error" id="inputName" placeholder="Nome" />
                     <i class="form__input-icon fas fa-user"></i>
+                    <span class="form__message-error">Campo obrigatório</span>
                 </div>
 
                 <div class="form__group">
@@ -35,21 +36,28 @@
                         placeholder="Senha" />
                         <i class="form__input-icon fas fa-lock"></i>
                         <div class="requirements">
+                            <div class="requirements__progress-bar"></div>
                             <div class="requirement__description">A senha deverá ter</div>
                                 <ul class="requirements__list">
-                                    <li class="requirements__item">Pelo menos uma letra maiúscula e uma letra minúscula</li>
-                                    <li class="requirements__item">Pelo menos um número</li>
-                                    <li class="requirements__item">Pelo menos 1 caracter especial</li>
-                                    <li class="requirements__item">Pelo menos 8 caracteres</li>
+                                    <li class="requirements__item checked"> <i class=" fas "></i>
+                                    Pelo menos uma letra maiúscula e uma letra minúscula</li>
+                                    <li class="requirements__item">
+                                        <i class=" fas ">
+                                        </i>Pelo menos um número</li>
+                                    <li class="requirements__item">  <i class=" fas "></i>
+                                    Pelo menos 1 caracter especial</li>
+                                    <li class="requirements__item">
+                                        <i class=" fas "></i>
+                                        Pelo menos 8 caracteres</li>
                                 </ul>
                         </div>
                 </div>
                 <div class="form__group">
                     <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms" />
-                    <label class="form__label" for="inputTerms">Concordo com os termos e politica de privacidade</label>
+                    <label class="form__label" for="inputTerms">Concordo com os <a class="form__link" href="/">termos</a> <a class="form__link" href="/">e politica de privacidade</a></label>
 
                 </div>
-                <div class="form__group">
+                <div class="form__group form__group--center">
                     <button class="form__button-submit" type="submit">Enviar</button>
                 </div>
 

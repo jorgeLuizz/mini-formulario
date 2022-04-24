@@ -45,6 +45,7 @@ ul {
 }
 
 .logo {
+
     text-align: center;
 }
 
@@ -73,6 +74,10 @@ ul {
     position: relative;
 }
 
+.form__group--center{
+    text-align: center;
+}
+
 .form__input-text {
     background-color: #f5f6f8;
     border: .2rem solid #ededf1;
@@ -85,9 +90,18 @@ ul {
     width: 100%;
 }
 
+.form__input-text.error{
+    border-color: #d95150;
+
+}
+
 .form__input-text::placeholder {
     font-weight: bold;
     color: #c1c6d0;
+}
+
+.form__input-checkbox {
+    margin-right: .5rem;
 }
 
 .form__label .hide {
@@ -102,5 +116,70 @@ ul {
     position: absolute;
     left: 1.5rem;
     top: 3.5rem;
-    
+
+}
+
+.form__label {
+    color: #454653;
+    font-size: 1.5rem;
+}
+
+.form__link {
+    color: #00a9c8;
+}
+
+.form__button-submit {
+    background-color: #00a9c8;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+    height: 5rem;
+    margin-top: 2rem;
+    width: 15rem;
+    border-radius: 2.5rem;
+}
+
+.form__message-error{
+    color: #d95150;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.requirements {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 1rem;
+}
+
+.requirements__progress-bar {
+    background-color: #f3e24a;
+    border-radius: .5rem;
+    height: .5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+}
+
+.requirement__description,
+.requirements__item {
+    color: #9ea4ac;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+.requirements__item.checked{
+    color: #81bc3A;
+    font-weight: bold;
+}
+
+.requirements__item .fas::before {
+    content: "\f057";
+
+}
+
+.requirements__item.checked .fas::before {
+    content: "\f058";
+
 }
